@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:id="@+id/tv_item_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="@dimen/sp_12"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_gravity="center"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/shape_corner_blue_circle"
+        android:paddingRight="@dimen/dp_6"
+        android:paddingLeft="@dimen/dp_6"
+        android:paddingTop="@dimen/dp_2"
+        android:paddingBottom="@dimen/dp_2"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

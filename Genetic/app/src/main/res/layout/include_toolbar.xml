@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/appBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:id="@+id/flToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="96px"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/ivToolbarNavigation"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:src="@mipmap/ic_back"/>
+
+            <View
+                android:id="@+id/vToolbarDivision"
+                android:layout_width="40px"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/ivToolbarNavigation"
+                android:background="@drawable/shape_vertical_line"
+                android:visibility="gone"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/llToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvToolbarTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="34px"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/tvToolbarSubTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="25px"
+                    android:visibility="gone"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <!--加号菜单-->
+            <TextView
+                android:id="@+id/tvToolbarRight"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/item_margin_left_and_right"
+                android:textColor="@color/white"
+                android:visibility="visible"/>
+
+            <!--添加朋友-->
+
+            <!--搜索-->
+
+            <!--发送按钮-->
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoFrameLayout>
+</LinearLayout>

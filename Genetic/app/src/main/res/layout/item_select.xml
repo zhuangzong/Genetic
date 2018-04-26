@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/gray_ef"/>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:minHeight="@dimen/dp_25">
+        <TextView
+            android:id="@+id/tv_item_select_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保护等级"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/sp_13"/>
+        <ImageView
+            android:id="@+id/iv_item_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/down"
+            android:padding="@dimen/dp_5"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_item_select"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</com.zhy.autolayout.AutoLinearLayout>

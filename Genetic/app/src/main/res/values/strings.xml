@@ -1,0 +1,39 @@
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">全国畜禽遗传资源</string>
+    <string name="label_picker_activity" >Images &#038; Videos</string>
+    <string name="btn_send">Send</string>
+    <string name="login">登 录</string>
+    <string name="register_2">注 册</string>
+    <string name="register_back">已有账号返回登录？</string>
+    <string name="register">新用户注册</string>
+    <string name="name_not_empty">请输入用户名</string>
+    <string name="password_not_empty">请输入密码</string>
+    <string name="password_not_right">两次输入密码不一致</string>
+    <string name="phone_not_empty">请输入手机号</string>
+    <string name="login_error">登录失败</string>
+    <string name="waiting">请稍后</string>
+    <string name="maintitle1">畜禽屠宰</string>
+    <string name="category">畜禽品种</string>
+    <string name="circle">共享圈</string>
+    <string name="select">筛选</string>
+    <string name="first_title">畜禽遗传资源动态监测</string>
+    <string name="hot">热门动态</string>
+
+
+    <color name="__picker_common_primary">#f3f3f3</color>
+    <color name="__picker_text_40">#282828</color>
+    <color name="__picker_text_80">#505050</color>
+    <color name="__picker_text_120">#787878</color>
+    <string name="__picker_image_count">%1$d</string>
+    <string name="image_video">Images &#038; Videos</string>
+    <string name="all_video">All Videos</string>
+
+    <string name="send_multi">Send(%1$d/%2$d)</string>
+    <string name="original_image">Full Image(%s)</string>
+    <string name="preview">Preview</string>
+    <string name="preview_multi">Preview(%d)</string>
+    <string name="select_max_sum">Select up to %1$d images or videos</string>
+    <string name="play_video_fail">play video fail</string>
+    <string name="select_media">Select</string>
+    <string name="edit">Edit</string>
+</resources>

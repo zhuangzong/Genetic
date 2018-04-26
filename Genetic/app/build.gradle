@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+        applicationId "com.shanlian.genetic"
+        minSdkVersion 18
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    signingConfigs {
+        release {
+            storeFile file('genetic.jks')
+            storePassword "888888"
+            keyAlias "genetic"
+            keyPassword "888888"
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    repositories { flatDir { dirs 'libs' } }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile 'com.zhy:autolayout:1.4.5'
+    compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.3.1'
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    compile 'com.squareup.okio:okio:1.12.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:design:26.0.0-alpha1'
+    compile 'cjt.library.wheel:camera:0.1.9'
+    compile 'me.drakeet.materialdialog:library:1.3.1'
+    compile 'com.jaeger.statusbaruitl:library:1.3.5'
+    compile 'com.lovedise:permissiongen:0.0.6'
+    compile 'de.hdodenhof:circleimageview:2.2.0'
+    compile 'com.beloo.widget:ChipsLayoutManager:0.3.7@aar'
+
+    compile files('libs/joda-time-2.5-sources.jar')
+    compile files('libs/joda-time-2.5.jar')
+    compile project(':xrichtext')
+    compile project(':uikit')
+}
